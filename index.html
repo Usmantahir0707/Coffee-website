@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Shop Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ================================= Header ==================================== -->
+    <header class="header">
+        <nav class="nav">
+            <input type="checkbox" id="toogle">
+       
+    
+            <a href="#home" id="logo-container"><logo class="logo">Coffee.</logo></a>
+            <div class="sidebar">
+                <a class="links sidec" href="#home" id="sided1">Home</a>
+                    <a class="links sidec" href="#about" id="sided2">About us</a>
+                    <a class="links sidec" href="#menu" id="sided3">Menu</a>
+                    <a class="links sidec" href="#contact-us" id="sided4">Contact Us</a>
+                    <label for="coogle"><i class="ri-shopping-cart-fill links" id="cart-navm"></i><span class="quantity">0</span></label>
+                    
+            </div>
+       <label for="toogle" id="overlay"></label>
+    
+            <div class="link-box">
+                <a class="links home-link" href="#home">Home</a>
+                    <a class="links about-link" href="#about">About us</a>
+                    <a class="links menu-link" href="#menu">Menu</a>
+                    <a class="links contact-link" href="#contact-us">Contact Us</a>
+
+                    <label for="coogle" id="label-cart"><i class="ri-shopping-cart-fill links" id="cart-nav" ></i></label>
+                    
+            </div>
+            
+            <label for="toogle" id="label-menu-bar"><i class="ri-menu-line links" id="menu-bar"></i></label>
+            <input type="checkbox" id="coogle">
+            <div class="cart-menu">
+                <label for="coogle" id="label-cross"><i class="ri-close-line"></i></label>
+                <h1 style="font-size: 21px; font-weight: 200;">Cart</h1>
+                <h2 class="units" style="font-weight: lighter; font-size: small; grid-area: 2/1;">Items</h2>
+                <h2 class="units" style="font-weight: lighter; font-size: small; grid-area: 2/2;">Price</h2>
+                <h2 class="units" style="font-weight: lighter; font-size: small; grid-area: 2/3;">quantity</h2>
+            </div>
+            <label for="coogle" id="overlay-cart"></label>
+    </nav>
+    </header>
+<main class="main">
+    <!-- =========================================== Home ======================================== -->
+<section id="home">
+<div id="home-content">
+    <h1 id="home-heading">Start Your Day With <br> <span class="highlight"> Fresh Coffee ! </span></h1>
+    <p id="home-tagline">"Fuel Your Day with the Rich Aroma and Bold Flavor of Every Cup <br> — Experience Coffee Like Never Before."</p>
+   <a href="#menu" id="order-link"> <button id="order-button">Order Now</button></a>
+</div>
+</section>
+   <!-- ================================================= About us ===================================== -->
+   <section id="about">
+    <h1 class="about-title">About Us</h1>
+    <div id="about-flex1">
+        <p id="about-para1"> <span style="font-size: large; font-family: rowdies;">Welcome to Coffee.</span> <br><br>
+            Our journey began with a love for crafting great coffee. We’re dedicated to offering a blend that not only tastes exceptional but also supports creativity, conversation, and community. At Coffee, we believe coffee is more than just a drink—it’s a daily experience to be enjoyed.</p>
+    <img src="about1.jpg" alt="coffee" id="about-image-1">
+    </div>
+
+    <div id="about-flex2">
+        <img src="about2.jpg" alt="coffee" id="about-image-2">
+        <p id="about-para2">
+            <span style="font-size: large; font-family: rowdies;">Our Commitment to Quality</span> <br><br>
+            At Coffee. we source the finest beans from sustainable farms around the world, ensuring that every sip is rich, flavorful, and ethically produced. From the moment the beans are harvested to the final pour, we take pride in the craft of coffee-making. <br> <br>
+
+            Every cup brewed at Coffee is a result of our dedication to quality and our belief in meaningful connections. Whether you're savoring your first morning sip or gathering with friends, our coffee is designed to enrich every moment.
+        </p></div>
+        <div id="about-flex3">
+            <p id="about-para3"> <span style="font-size: large; font-family: rowdies;">Our Values</span> <br><br>
+                We are committed to sustainability, ethical sourcing, and community engagement. Our dedication to these values drives every decision we make, ensuring that our business positively impacts both people and the planet.</p>
+        <img src="about3.jpg" alt="coffee" id="about-image-3">
+        </div>
+</section>
+    <!-- ================================================ Menu ====================================== -->
+    <section id="menu">
+        <h1 class="menu-title">Menu</h1>
+        <br> <p id="tagline">"Crafted with Passion, Served with Care – Explore Our Coffee Creations!"</p>
+    </div>
+        <div class="menu-grid">
+            <article class="menu-cards" id="menu-card1" tabindex="0">
+                <h1 class="card-headings" id="latte-heading">Iced Latte</h1>
+                <img class="menu-images" src="images/ice-latte.jpg" alt="img-iced-latte" id="img-iced-latte">
+                <p class="card-para" id="latte-para">Blend of rich espresso and smooth, cold milk poured over ice. Perfect for a light, chilled pick-me-up on a warm day! <br> <span class="price">Price: $4.99</span> </p>
+                <label for="size1" id="sizee1" class="sizee">
+                    <select name="size" id="size1" class="size">
+                        <option value="regular">regular</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select>
+                    <div class="qty-wrapper">
+                        <span class="qty-spans minus">-</span>
+                        <span class="qty-spans num">1</span>
+                        <span class="qty-spans plus">+</span>
+                    </div>
+                </label>
+                <button class="buy-button">Add to cart <i class="ri-shopping-cart-fill"></i></button>
+                <button class="buy-button">Buy now</button>
+
+            </article>
+
+                <article class="menu-cards" id="menu-card2">
+                <h1 class="card-headings" id="Cappicino-heading"> Cappuccino</h1>
+                <img class="menu-images" src="images/cappi.jpg" alt="img-iced-cappi" id="img-cup-cappi">
+                <p class="card-para" id="cappi-para">A perfect blend of bold espresso, steamed milk, and velvety foam—a classic for those who enjoy a rich, creamy coffee. <br>  <span class="price">Price: $3.99</span> </p>
+                <label for="size2" id="sizee2" class="sizee">
+                    <select name="size" id="size2" class="size">
+                        <option value="regular">regular</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select> 
+                    <div class="qty-wrapper">
+                        <span class="qty-spans minus">-</span>
+                        <span class="qty-spans num">1</span>
+                        <span class="qty-spans plus">+</span>
+                    </div>
+                </label>
+                <button class="buy-button">Add to cart <i class="ri-shopping-cart-fill"></i></button>
+                <button class="buy-button">Buy now</button>
+            </article>
+
+            <article class="menu-cards" id="menu-card3">
+                <h1 class="card-headings" id="Black-Coffee-heading">Black-Coffee</h1>
+                <img class="menu-images" src="images/black2.png" alt="img-black" id="img-black">
+                <p class="card-para" id="black-para">A full-bodied classic black brew for those who savor the pure, rich flavor of freshly roasted coffee. <br> <span class="price"> Price: $2.99</span></p>
+                <label for="size3" id="sizee3" class="sizee">
+                    <select name="size" id="size3" class="size">
+                        <option value="regular">regular</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select> 
+                    <div class="qty-wrapper">
+                        <span class="qty-spans minus">-</span>
+                        <span class="qty-spans num">1</span>
+                        <span class="qty-spans plus">+</span>
+                    </div>
+                </label>
+                <button class="buy-button">Add to cart <i class="ri-shopping-cart-fill"></i></button>
+                <button class="buy-button">Buy now</button>
+            </article>
+
+                <article class="menu-cards" id="menu-card4">
+                <h1 class="card-headings" id="Mocha-heading">Mocha</h1>
+                <img class="menu-images" src="images/moch.png" alt="img-moch" id="img-moch">
+                <p class="card-para" id="moch-para">A rich blend of espresso, steamed milk, and chocolate, topped with whipped cream for a sweet, creamy treat. <br>  <span class="price">Price: $4.49</span></p>
+                <label for="size4" id="sizee4" class="sizee">
+                    <select name="size" id="size4" class="size">
+                        <option value="regular">regular</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select> 
+                    <div class="qty-wrapper">
+                        <span class="qty-spans minus">-</span>
+                        <span class="qty-spans num">1</span>
+                        <span class="qty-spans plus">+</span>
+                    </div>
+                </label>
+                <button class="buy-button">Add to cart <i class="ri-shopping-cart-fill"></i></button>
+                <button class="buy-button">Buy now</button>
+            </article>
+            
+                <article class="menu-cards" id="menu-card5">
+                <h1 class="card-headings" id="americano">Americano</h1>
+                <img class="menu-images" src="images/americano.png" alt="img-americano" id="img-americano">
+                <p class="card-para" id="americano-para">Perfect for those who enjoy a strong coffee without the intensity of a straight shot.<br>  <span class="price">Price: $3.29</span></p>
+                <label for="size5" id="sizee5" class="sizee">
+                    <select name="size" id="size5" class="size">
+                        <option value="regular">regular</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select> 
+                    <div class="qty-wrapper">
+                        <span class="qty-spans minus">-</span>
+                        <span class="qty-spans num">1</span>
+                        <span class="qty-spans plus">+</span>
+                    </div>
+                </label>
+                <button class="buy-button">Add to cart <i class="ri-shopping-cart-fill"></i></button>
+                <button class="buy-button">Buy now</button>
+            </article>
+        </div>
+    </section>
+    <!-- =============================================== Contact us ====================================== -->
+    <section id="contact-us">
+        <h1 class="contact-title">Contact us</h1>
+        <br> <p id="tagline-con">"Get In Touch"</p>
+        <div class="contact-grid">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3405.138222257382!2d73.11912044055221!3d31.410317616235233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1726086734998!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-container">
+                    <span id="name1">Name :</span> <input type="text" placeholder="Name" class="name"> <br> <br>
+                 <span id="name2">Email :</span> <input type="text" placeholder="Email" class="name" id="namex"> <br> <br>
+                   <span id="name3"> Number :</span> <input type="text" placeholder="Number" class="name" id="namey"> <br><br>
+                    <textarea name="Message" id="text" placeholder="Your-Message"></textarea> <br> 
+                    <Button id="send-button"> Submit</Button>
+                </div>  
+        </div>
+        <img src="images/barista-making-cup-coffee.jpg" id="c-image1">
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="sign-ups">
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-twitter-x-fill"></i>
+                <i class="ri-youtube-fill"></i>
+            </div>
+
+        <div class="footer-grid">
+            <div class="footer-card f-card1">
+                <h1 class="fcard-heading1">Support</h1>
+                <p class="fcard-para1">
+                    FAQs<br>  Community Forum <br>Live Chat/Chatbot
+                </p>
+
+            </div>
+            <div class="footer-card f-card2">
+                <h1 class="fcard-heading2">Email/Phone</h1>
+                <ul class="hours">
+                    <li>Email: u.t_123@yahoo.com</li>
+                    <li>Phone: +92 - 3227644668</li>
+                </ul>
+            </div>
+            <div class="footer-card f-card3">
+                <h1 class="fcard-heading3">Business Hours</h1>
+                <ul class="hours">
+                    <li>Monday - Friday: 7:00 AM - 8:00 PM</li>
+                    <li> Saturday - Sunday: 8:00 AM - 9:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-flex">
+            <span class="signature">Designed by Usman Tahir</span>
+            <span class="rights">© 2023 Coffee. All Rights Reserved.</span>
+        </div>
+        
+       </div></footer>
+</main>
+<!-- ================================================= Script ===================================== -->
+<script>
+    window.addEventListener('scroll', function() {
+    var nav = document.querySelector('.nav');
+    var sidebar = document.querySelector('.sidebar');
+    
+    if (window.scrollY > 50) { // Adjust the scroll value as needed
+        nav.classList.add('scrolled');
+        sidebar.classList.add('scrolled'); // Add 'scrolled' class to sidebar as well
+    } else {
+        nav.classList.remove('scrolled');
+        sidebar.classList.remove('scrolled'); // Remove 'scrolled' class from sidebar
+    }
+});
+
+</script>
+<script>
+const cards = document.querySelectorAll('.menu-cards');
+
+// Function to remove hover effect from all cards
+function removeActiveHover() {
+  cards.forEach(card => card.classList.remove('hover-active'));
+}
+
+// Function to add hover effect to the hovered card
+function addHoverEffect(card) {
+  removeActiveHover(); // Remove hover effect from other cards
+  card.classList.add('hover-active'); // Add hover effect to the current card
+}
+
+// Handle hover event on each card
+cards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    addHoverEffect(card);
+  });
+});
+
+// Remove hover effect when clicking outside any card
+document.addEventListener('click', (event) => {
+  if (![...cards].some(card => card.contains(event.target))) {
+    removeActiveHover();
+  }
+});
+</script>
+<script>
+    function increaseQuantity() {
+      let input = document.getElementById("quantity-input");
+      let currentValue = parseInt(input.value);
+      input.value = currentValue + 1;
+    }
+    
+    function decreaseQuantity() {
+      let input = document.getElementById("quantity-input");
+      let currentValue = parseInt(input.value);
+      if (currentValue > 1) {
+        input.value = currentValue - 1;
+      }
+    }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
